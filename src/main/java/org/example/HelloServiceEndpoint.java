@@ -25,8 +25,8 @@ public class HelloServiceEndpoint{
         ServiceResponse resp = respDoc.addNewServiceResponse();
 
         String userName = req.getName();
-        String helloMessage = testNewService.getHello(userName);
-        Calendar currentTime = testNewService.getCurrentTime();
+        String helloMessage = helloService.getHello(userName);
+        Calendar currentTime = helloService.getCurrentTime();
 
         resp.setHello(helloMessage);
         resp.setCurrentTime(currentTime);
